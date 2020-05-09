@@ -1,3 +1,5 @@
 .vscode
 venv
 *.sqlite3
+gestao_rh/__pycache__/
+*.pyc
