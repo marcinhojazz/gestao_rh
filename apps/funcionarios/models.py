@@ -13,4 +13,4 @@ class Funcionario(models.Model):
     empresa = models.ForeignKey(Empresa, on_delete=models.PROTECT)
 
     def __str__(self):
-        return self.name
+        return self.namea
