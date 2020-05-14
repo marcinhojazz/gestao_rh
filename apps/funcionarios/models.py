@@ -10,7 +10,7 @@ class Funcionario(models.Model):
     username = models.OneToOneField(User, on_delete=models.PROTECT, unique=True)
     # adicionando a classe departamentos que foi importada apartir de apps.
     departamentos = models.ManyToManyField(Departamento)
-    empresa = models.ForeignKey(Empresa, on_delete=models.PROTECT)
+    empresa = models.ForeignKey(Empresa, on_delete=models.PROTECT, null=True, blank=True)
 
     def __str__(self):
-        return self.namea
+        return self.name
